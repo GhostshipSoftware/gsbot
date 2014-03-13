@@ -55,6 +55,10 @@ module.exports = (robot) ->
       hb_status.update_status msg.message.user.name, msg.match[3]
       msg.send msg.message.user.name + " has a new status."
 
+  robot.respond /show status (.*)/i, (msg) ->
+    hb_status = new Status robot
+    msg.send msg.match[1] + "'s status: " + hb_status.statuses_[msg.match[1].toLowerCase()]
+
   robot.respond /statuses?/i, (msg) ->
     hb_status = new Status robot
     message = for user, s of hb_status.statuses_
