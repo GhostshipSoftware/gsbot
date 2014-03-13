@@ -16,6 +16,8 @@
 #
 #   hubot show status <username> - Tells you the status of username
 #
+#   hubot statuses - List all user statuses in the brain.
+#
 #   Shortcuts Commands:
 #     hubot a <away_message>
 #     hubot r
