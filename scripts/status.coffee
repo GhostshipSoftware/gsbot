@@ -16,13 +16,12 @@
 #
 #   hubot status <status_message> - Sets your status to status_message.
 #
-#   hubot status <username> - Tells you the status of username
+#   hubot show status <username> - Tells you the status of username
 #
 #   Shortcuts Commands:
 #     hubot a <away_message>
 #     hubot r
 #     hubot s <status_message>
-#     hubot s <username>
 #
 # Notes:
 #   We opted to used the '/<trigger>' syntax in favor of the 'hubot <trigger>'
