@@ -44,7 +44,7 @@ class Reminders
           reminder = @removeFirst()
           string = '@' + reminder.msg_envelope.user.name + ': you asked me to remind you to ' + reminder.action
           #@robot.reply reminder.msg_envelope, 'you asked me to remind you to ' + reminder.action
-          @robot.send reminder.msg_envelop, string
+          @robot.send reminder.msg_envelope, string
           @queue()
         # setTimeout uses a 32-bit INT
         extendTimeout = (timeout, callback) ->
