@@ -42,7 +42,9 @@ class Reminders
       if @cache.length > 0
         trigger = =>
           reminder = @removeFirst()
-          @robot.reply reminder.msg_envelope, 'you asked me to remind you to ' + reminder.action
+          string = '@' + reminder.msg_envelope.user.name + ': you asked me to remind you to ' + reminder.action
+          #@robot.reply reminder.msg_envelope, 'you asked me to remind you to ' + reminder.action
+          @robot.send reminder.msg_envelop, string
           @queue()
         # setTimeout uses a 32-bit INT
         extendTimeout = (timeout, callback) ->
