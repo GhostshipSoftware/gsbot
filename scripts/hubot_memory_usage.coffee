@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot resource usage
+#   hubot resource usage - Shows memory and cpu usage of the Hubot instance
 #
 # Author:
 #   Geoffrey Brodniak

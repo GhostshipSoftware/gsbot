@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot server uptime
+#   hubot server uptime - Returns the Hubot host server's uptime.
 #
 # Author:
 #   Geoffrey Brodniak
